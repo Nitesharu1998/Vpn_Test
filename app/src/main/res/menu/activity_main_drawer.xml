@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="none">
+
+
+        <item
+            android:id="@+id/nav_prem"
+            android:fontFamily="@font/inter_bold"
+            android:icon="@drawable/ic_pro_diamond"
+            android:tint="@color/icon"
+            android:title="Upgrade To VIP" />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:fontFamily="@font/inter_bold"
+            android:icon="@drawable/ic_rate_playstore"
+
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_share"
+            android:fontFamily="@font/inter_bold"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:fontFamily="@font/inter_bold"
+            android:icon="@drawable/ic_mail_black"
+            android:title="Contact Us" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_about_us"
+            android:fontFamily="@font/inter_bold"
+            android:icon="@drawable/ic_about_us"
+            android:title="About Us" />
+    </group>
+</menu>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "747122304987",
+    "project_id": "pro-dubai-vpn",
+    "storage_bucket": "pro-dubai-vpn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747122304987:android:1cf561303d8700033fe9fe",
+        "android_client_info": {
+          "package_name": "com.vpnpro.unblockproxy.dubaivpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747122304987-pe4fqsgf2u9puav9aimfpapi8hmt7qe5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vpnpro.unblockproxy.dubaivpn",
+            "certificate_hash": "ac70be081c69263c542e6e8dc32f6d9a083623d6"
+          }
+        },
+        {
+          "client_id": "747122304987-s5ujln1uldje527ic1764jv36rjjuu1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4_JXUDIvR7H84oHHBxWWqOwjRAd1Nd7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747122304987-s5ujln1uldje527ic1764jv36rjjuu1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/ivstart1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginHorizontal="10dp"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5dp">
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:background="@drawable/server_flag_shape"
+                app:cardCornerRadius="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/country_flag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="36dp"
+                    android:maxHeight="36dp"
+                    android:src="@drawable/ic_new_svg_connect" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/location_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Optimal Server"
+                    android:fontFamily="@font/avalon_font"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/cityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City Name"
+                    android:fontFamily="@font/avalon_font"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/free_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_pro_diamond"
+                android:visibility="visible"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_new_connect_btn"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8dp"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:id="@+id/country_flag"
+                android:layout_weight="0"
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="36dp"
+                android:maxWidth="36dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/f_0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/location_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Optimal Server"
+                    android:fontFamily="@font/avalon_font"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/cityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City Name"
+                    android:fontFamily="@font/avalon_font"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/free_iv"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="0"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_subscription"
+                android:layout_gravity="center"
+                android:visibility="visible"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/full_signals"
+                android:layout_gravity="center"/>
+        </LinearLayout>-->
+
+</LinearLayout>

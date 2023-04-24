@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.vpnpro.unblockproxy.dubaivpn"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 4
+        versionName "1.0.3"
+        multiDexEnabled true
+       // ndkVersion '23.0.7599858'fb7397ab-fb7d-42d9-bd03-46ca6cb26827
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            if (project.hasProperty('KEYSTORE_FILE')) {
+                storeFile file(KEYSTORE_FILE)
+                storePassword KEYSTORE_PASSWORD
+                keyAlias KEYSTORE_ALIAS
+                keyPassword KEYSTORE_KEY_PASSWORD
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+
+    lintOptions {
+        disable 'MissingTranslation'
+        disable 'ExtraTranslation'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    bundle{
+        abi{
+            enableSplit = false
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4G"
+    }
+}
+
+dependencies {
+
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.preference:preference:1.1.1"
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'com.android.billingclient:billing:4.0.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation "com.airbnb.android:lottie:4.2.0"
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    //Firebase
+
+    implementation platform('com.google.firebase:firebase-bom:31.4.0')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+
+    def lifecycle_version = '2.5.1'
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+}
